@@ -1,0 +1,101 @@
+2018-11-20 10:49:53,679 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 13:52:48,125 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 13:53:25,267 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 13:53:42,580 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 13:54:02,175 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 16:18:24,706 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:41:11,931 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:42:13,848 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:42:25,572 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:44:11,115 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:44:53,913 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:46:05,282 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:46:09,269 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:46:40,381 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:47:39,229 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 17:49:39,657 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 18:05:38,614 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 18:13:10,348 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 18:13:35,319 ERROR: Exception on /user/n.wang [GET] [in /Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: followers
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/routes.py", line 66, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/base.html", line 20, in top-level template code
+    {% block content %}
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/user.html", line 18, in block "content"
+    <p>Following {{ user.followed.count() }}, {{ user.followers.count() }} followers</p>
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/orm/dynamic.py", line 269, in count
+    return self._clone(sess).count()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3230, in count
+    return self.from_self(col).scalar()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2983, in scalar
+    ret = self.one()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2954, in one
+    ret = self.one_or_none()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2924, in one_or_none
+    ret = list(self)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2995, in __iter__
+    return self._execute_and_instances(context)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3018, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+    context)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: followers [SQL: 'SELECT count(*) AS count_1 \nFROM (SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen \nFROM user, followers \nWHERE followers.follower_id = ? AND followers.followed_id = user.id) AS anon_1'] [parameters: (1,)] (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-11-20 18:17:38,683 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 18:18:26,763 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 18:19:59,132 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 18:21:05,748 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-20 18:21:18,233 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]

@@ -1,0 +1,116 @@
+2018-11-21 11:46:41,674 ERROR: Exception on /index/ [GET] [in /Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/routes.py", line 15, in index
+    form = PostForm()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/base.html", line 20, in top-level template code
+    {% block content %}
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-11-21 11:47:52,751 ERROR: Exception on /index/ [GET] [in /Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/routes.py", line 15, in index
+    form = PostForm()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/base.html", line 20, in top-level template code
+    {% block content %}
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-11-21 11:47:57,833 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-21 11:48:13,394 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-21 13:27:25,502 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2018-11-21 13:28:33,940 INFO: Microblog startup [in /Users/me/Documents/mystuff/myproject/fwd/microblog/app/__init__.py:48]
+2019-01-09 20:22:20,680 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:22:51,041 ERROR: Unhandled exception [in ./app/tasks.py:72]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 68, in export_posts
+    , sync=True)
+  File "./app/email.py", line 22, in send_mail
+    mail.send(msg)
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/Users/me/Documents/mystuff/myproject/fwd/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 727, in create_connection
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+2019-01-09 20:22:52,098 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:23:43,265 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:24:34,508 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:25:25,725 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:25:31,701 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:25:37,583 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:25:43,440 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:26:54,079 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:27:23,044 INFO: Microblog startup [in ./app/__init__.py:88]
+2019-01-09 20:28:31,421 INFO: Microblog startup [in ./app/__init__.py:88]
