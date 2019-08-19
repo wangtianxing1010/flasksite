@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 basedir = os.path.abspath(os.path.dirname(__file__))
 load_dotenv(os.path.join(basedir, '.env'))
 
-
+#heroku ps:scale worker=1
 class Config(object):
     # app
     SECRET_KEY = os.environ.get("SECRET_KEY") or "You will never guess"
@@ -20,7 +20,7 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['n.wang.travel@gmail.com']
     # page
-    POSTS_PER_PAGE = 5
+    POSTS_PER_PAGE = os.environ.get('POSTS_PER_PAGE') or 2
     # lang
     LANGUAGES = ['en', 'zh', 'fr']
     # search
