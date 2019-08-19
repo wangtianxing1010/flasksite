@@ -20,7 +20,7 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['n.wang.travel@gmail.com']
     # page
-    POSTS_PER_PAGE = 2
+    POSTS_PER_PAGE = 5
     # lang
     LANGUAGES = ['en', 'zh', 'fr']
     # search

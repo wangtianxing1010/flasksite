@@ -1,5 +1,6 @@
 import os
 import click
+from app.models import Post, User
 
 
 def register_commands(app):
@@ -7,6 +8,12 @@ def register_commands(app):
     def translate():
         # Translation commands
         pass
+
+    @app.cli.command()
+    def forge():
+        # forging data commands
+        User.generate_fake(20)
+        Post.generate_fake(50)
 
     @translate.command()
     def update():
